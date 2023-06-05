@@ -16,7 +16,7 @@ if (videoTime) {
     player.setCurrentTime(JSON.parse(videoTime));
 };
 player.setCurrentTime()
-    .then(function () { })
+    .then(function (seconds) { })
     .catch(function (error) {
         switch (error.name) {
             case 'RangeError':
