@@ -13,7 +13,7 @@ function onFormInput(evt) {
     formData[evt.target.name] = evt.target.value;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 
-    console.log(formData);
+
 }
 
 populateInput();
@@ -33,7 +33,9 @@ function populateInput() {
 
 function onFormSubmit(evt) {
     evt.preventDefault();
-    console.log('Form submitted');
+    console.log(formData);
     evt.currentTarget.reset();
     localStorage.removeItem(STORAGE_KEY);
-}
+};
+
+
