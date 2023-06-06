@@ -9,7 +9,7 @@ player.on('timeupdate', throttle(function (evt) {
 
     localStorage.setItem(STORAGE_KEY, JSON.stringify(evt.seconds));
 
-}), 1000);
+}, 1000));
 let videoTime = localStorage.getItem(STORAGE_KEY);
 
 if (videoTime) {
